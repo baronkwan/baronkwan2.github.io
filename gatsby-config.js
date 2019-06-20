@@ -7,8 +7,8 @@
 module.exports = {
 /* Your site config here */
   siteMetadata: {
-    title: 'Full-Stack Gatsby Personal Blog',
-    author: 'Baron K'
+    title: 'Full-Stack Gatsby Blog',
+    author: 'Baron Kwan'
   },
   plugins: [
     'gatsby-plugin-sass'
