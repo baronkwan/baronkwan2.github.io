@@ -5,5 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+/* Your site config here */
+  siteMetadata: {
+    title: 'Full-Stack Gatsby Personal Blog',
+    author: 'Baron K'
+  },
+  plugins: [
+    'gatsby-plugin-sass'
+  ]
 }
