@@ -41,7 +41,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Blog" />
+      <Head title="Blog - Netlify CMS" />
       <h1>Blog</h1>
       <ol className={blogStyles.posts}>
         {data.allContentfulBlogPost.edges.map(edge => (

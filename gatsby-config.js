@@ -7,10 +7,11 @@
 module.exports = {
 /* Your site config here */
   siteMetadata: {
-    title: 'Full-Stack Gatsby Blog',
+    title: 'Baron Kwan',
     author: 'Baron Kwan'
   },
   plugins: [
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
@@ -24,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/`
+        path: `${__dirname}/blog/`
       }
     },
     'gatsby-plugin-sharp',
