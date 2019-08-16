@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-import ToggleButton from './ToggleButton'
+import ToggleButton from './toggleButton'
 
 import navbarStyles from "./navbar.module.scss"
 
