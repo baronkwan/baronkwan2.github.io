@@ -21,7 +21,7 @@ const BlogPage = () => {
   `)
 
   return (
-    <Layout>
+    <Layout className={blogStyles.blogPage}>
       <Head title="Blog - Contentful CMS" />
       <h1>Blog</h1>
       <ol className={blogStyles.posts}>

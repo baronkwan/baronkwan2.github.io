@@ -9,13 +9,13 @@ const ContactPage = () => {
       <Head title="Contact" />
       <h1>Contact</h1>
       <p>
-        Find me on IG via{" "}
+        IG: {" "}
         <a
           href="https://www.instagram.com/huyg/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @huyg
+          @foolstack.dev
         </a>
       </p>
       <p>

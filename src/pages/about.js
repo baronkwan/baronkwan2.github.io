@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <Layout style={`alignItems: center`}>
       <Head title="About" />
       <h1>About</h1> 
       <h2>My Bio</h2>

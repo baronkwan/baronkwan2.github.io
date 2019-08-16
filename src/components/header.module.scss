@@ -1,6 +1,12 @@
 .header {
-  padding: 1rem 0 2rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 1rem 0 0.8rem;
   background-color: #006a96;
+  overflow: hidden;
 }
 
 .header-wrapper {
@@ -14,37 +20,4 @@
   color: #ffcd00;
   font-size: 3rem;
   text-decoration: none;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0;
-}
-
-.nav-item {
-  color: #ffcd00;
-  font-weight: bold;
-  font-size: 1.3rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-  background-color: none;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.nav-item:hover {
-  background-color: #ffcd00;
-  border-radius: 5px;
-  padding: 5px;
-  color: #182b49;
-}
-
-.active-nav-item {
-  background-color: #ffcd00;
-  border-radius: 5px;
-  padding: 5px;
-  color: #182b49;
 }
