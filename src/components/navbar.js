@@ -54,7 +54,7 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className={navbarStyles.navItem}
             style={isBugerShow}
@@ -63,7 +63,7 @@ const Navbar = () => {
           >
             Blog - Netlify
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             className={navbarStyles.navItem}
@@ -71,7 +71,7 @@ const Navbar = () => {
             activeClassName={navbarStyles.activeNavItem}
             to="/blog-contentful"
           >
-            Blog - Contentful
+            Blog (Contentful)
           </Link>
         </li>
         <li>

@@ -33,7 +33,8 @@ const IndexPage = () => {
             speed={80}
           />
         </h2>
-      </div>
+      </div><hr></hr>
+      <h5>Check out my portfolios.</h5>
     </Layout>
   )
 }

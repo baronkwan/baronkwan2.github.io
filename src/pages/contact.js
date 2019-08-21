@@ -19,7 +19,7 @@ const ContactPage = () => {
         </a>
       </p>
       <p>
-        Say Hi to me <a href="mailto:baronkwan@outlook.com">here</a>
+        Send me an <a href="mailto:baronkwan@outlook.com">email</a>
       </p>
     </Layout>
   )
