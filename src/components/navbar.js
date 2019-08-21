@@ -1,15 +1,29 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-import ToggleButton from './toggleButton'
+import ToggleButton from "./toggleButton"
 
 import navbarStyles from "./navbar.module.scss"
+import { keyframes } from "emotion"
 
 const Navbar = () => {
   // State for mobile toggle button
   const [isToggleOpen, setToggle] = useState(false)
 
-  let isBugerShow = isToggleOpen ? {display: 'block'} : {display: 'none'}
+  const slideDown = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  `
+
+  let isBugerShow = isToggleOpen
+    ? { display: "block", animation: `${slideDown} 0.5s ease-out` }
+    : { display: "none" }
 
   return (
     <nav id="desktop-navbar">
@@ -17,14 +31,9 @@ const Navbar = () => {
         className={navbarStyles.toggleButton}
         onClick={() => setToggle(!isToggleOpen)}
       >
-        <ToggleButton
-          isToggleOpen={isToggleOpen}
-        />
+        <ToggleButton isToggleOpen={isToggleOpen} />
       </div>
-      <ul
-        className={navbarStyles.menu}
-        style={isBugerShow}
-      >
+      <ul className={navbarStyles.menu} style={isBugerShow}>
         <li>
           <Link
             className={navbarStyles.navItem}
