@@ -54,6 +54,16 @@ const Navbar = () => {
             About
           </Link>
         </li>
+        <li>
+          <Link
+            className={navbarStyles.navItem}
+            style={isBugerShow}
+            activeClassName={navbarStyles.activeNavItem}
+            to="/portfolio"
+          >
+            Portfolio
+          </Link>
+        </li>
         {/* <li>
           <Link
             className={navbarStyles.navItem}
