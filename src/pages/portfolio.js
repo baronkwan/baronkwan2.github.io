@@ -6,13 +6,14 @@ import makeData from "../components/makeData"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
+// import tableStyles from "./portfolio.module.scss"
+
 // Table component
 const Table = ({ columns, data }) => {
-
   console.log(columns)
   console.log(data)
 
-  const { getTableProps, headerGroups, rows, prepareRow, state } = useTable({
+  const { getTableProps, headerGroups, rows, prepareRow } = useTable({
     columns,
     data,
   })
@@ -22,16 +23,19 @@ const Table = ({ columns, data }) => {
   return (
     <>
       <div>
-        <pre>
-          <code>{JSON.stringify(state[0])}</code>
-        </pre>
+        {/* <pre>
+          <code>{JSON.stringify(state[0].rowState)}</code>
+        </pre> */}
       </div>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map(column => (
-                <th {...column.getHeaderProps()} style={{ textAlign: 'center' }}>
+                <th
+                  {...column.getHeaderProps()}
+                  style={{ textAlign: "center" }}
+                >
                   {column.render("Header")}
                   {/* TODO */}
                   {/* Render the columns filter UI */}
@@ -69,22 +73,23 @@ const PortfolioPage = () => {
       Header: "Projects",
       columns: [
         {
-          Header: "Front End",
-          accessor: "frontend",
-        },
-        {
-          Header: "Back End",
-          accessor: "backend",
+          Header: "Tech Stacks",
+          accessor: "techstacks",
           //filter: CHOICE OF FILTER
         },
+      ],
+    },
+    {
+      Header: "Info",
+      columns: [
         {
           Header: "Description",
-          accessor: 'description'
+          accessor: "description",
         },
         {
-          Header: 'Link',
-          accessor: 'link'
-        }
+          Header: "Link",
+          accessor: "link",
+        },
       ],
     },
   ])
@@ -92,7 +97,7 @@ const PortfolioPage = () => {
   const data = React.useMemo(() => makeData(10), [])
 
   return (
-    <Layout>
+    <Layout style={{ width: !"90%" }}>
       <Head title="Portfolio" />
       <h1>Portfolio</h1>
       <Table columns={columns} data={data} />

@@ -10,9 +10,8 @@ const range = len => {
 
 const newProject = () => {
   return {
-    frontend: faker.hacker.noun(),
-    backend: faker.hacker.verb(),
-    description: faker.lorem.paragraph(),
+    techstacks: faker.hacker.noun(),
+    description: faker.lorem.sentence(),
     link: faker.internet.url()
 
   }

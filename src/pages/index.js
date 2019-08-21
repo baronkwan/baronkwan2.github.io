@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react"
 import TypeIt from "typeit"
+import { Link } from "gatsby"
 
 import indexStyles from "./index.module.scss"
 
@@ -33,8 +34,11 @@ const IndexPage = () => {
             speed={80}
           />
         </h2>
-      </div><hr></hr>
-      <h5>Check out my portfolios.</h5>
+      </div>
+      <hr></hr>
+      <h5>
+        Check out my <Link to="/portfolio">portfolio</Link>.
+      </h5>
     </Layout>
   )
 }
