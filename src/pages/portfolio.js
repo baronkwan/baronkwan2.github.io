@@ -1,11 +1,9 @@
 import React from "react"
-import { useTable } from "react-table"
-
-import makeData from "../components/makeData"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 
+<<<<<<< HEAD
 // import tableStyles from "./portfolio.module.scss"
 
 // Table component
@@ -96,11 +94,18 @@ const PortfolioPage = () => {
 
   const data = React.useMemo(() => makeData(10), [])
 
+=======
+const PortfolioPage = () => {
+  // TODO: Define Filter Function Here
+>>>>>>> add-portfolio-page
   return (
     <Layout style={{ width: !"90%" }}>
       <Head title="Portfolio" />
-      <h1>Portfolio</h1>
-      <Table columns={columns} data={data} />
+      <section id="portfolio">
+        <h1 id="page-header">Portfolio</h1>
+        <div id="filter">Filter</div>
+        <div id="gallery">Gallery</div>
+      </section>
     </Layout>
   )
 }

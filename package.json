@@ -33,7 +33,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-table": "^7.0.0-alpha.25",
+    "typeface-montserrat": "^0.0.75",
     "typeit": "^6.0.3"
   },
   "devDependencies": {
