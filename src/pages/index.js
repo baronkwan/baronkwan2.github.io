@@ -34,7 +34,7 @@ const IndexPage = () => {
           />
         </h2>
       </div><hr></hr>
-      <h5>Check out my portfolios.</h5>
+      <h5>Check out my portfolio.</h5>
     </Layout>
   )
 }
